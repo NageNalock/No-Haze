@@ -13,7 +13,6 @@
 import math
 import csv
 
-
 def inLoaction(siteLon, siteLat, taxiLon, taxiLat):
     '''
     判断出租车是否在区域内

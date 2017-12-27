@@ -84,9 +84,10 @@ def getTaxiTimeAndArea(a=1):
                 taxiDict['区域'] = areaString
                 if taxiDict['时间'] is None:  # 无法正常处理的时间
                     if taxiRealTime.day == 30 and (taxiRealTime.month == 4 or 6 or 9 or 11):
-                        taxiDict['时间'] = datetime(year=taxiRealTime.year, month=taxiRealTime.month+1,day=1)
+                        taxiDict['时间'] = datetime(year=taxiRealTime.year, month=taxiRealTime.month + 1, day=1)
                     else:
-                        taxiDict['时间'] = datetime(year=taxiRealTime.year, month=taxiRealTime.month, day=taxiRealTime.day+1)
+                        taxiDict['时间'] = datetime(year=taxiRealTime.year, month=taxiRealTime.month,
+                                                  day=taxiRealTime.day + 1)
 
                 flag = 0  # 是否找到
                 for taxiCount in taxiCountList:
